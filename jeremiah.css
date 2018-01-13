@@ -9,19 +9,31 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.90;
 }
 
 .text-block {
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: black;
-    color: white;
-    padding: 5px 10px 5px 10px;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    opacity: 0.95;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: black;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0.95;
+}
+
+.text-block2 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  background-color: black;
+  color: white;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0.95;
 }
 
 .topnav {
