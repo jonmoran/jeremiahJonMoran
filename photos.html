@@ -15,19 +15,109 @@
 	<div class="text-block2"> 
 		<h2>Adventure Photos</h2>
 		<div>
-			<img src="images/thumbsUp.jpg" width="300" height="200">
-			<img src="images/mtBelford.jpg" width="300" height="200">
-			<img src="images/cliffDog.jpg" width="300" height="200">
-			<img src="images/riverBoat.jpg" width="300" height="200">
-			<img src="images/canyon.jpg" width="300" height="200">
-			<img src="images/angelsLanding.jpg" width="300" height="200">
-			<img src="images/canyonBridge.jpg" width="300" height="200">
-			<img src="images/grandCamp.jpg" width="300" height="200">
-			<img src="images/hooverDam.jpg" width="300" height="200">
-			<img src="images/lavaTube.jpg" width="300" height="200">
-			<img src="images/climbingLedge.jpg" width="300" height="200">
-			<img src="images/riverCamp.jpg" width="300" height="200">
+			<img src="images/mtBelford.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+			<img src="images/thumbsUp.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			<img src="images/cliffDog.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+			<img src="images/riverBoat.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+			<img src="images/canyon.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+			<img src="images/angelsLanding.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+			<img src="images/canyonBridge.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+			<img src="images/grandCamp.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+			<img src="images/hooverDam.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+			<img src="images/lavaTube.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+			<img src="images/climbingLedge.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+			<img src="images/riverCamp.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow">
 		</div>
+		<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 12</div>
+      <img src="images/mtBelford.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 12</div>
+      <img src="images/thumbsUp.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 12</div>
+      <img src="images/cliffDog.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 12</div>
+      <img src="images/riverBoat.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 12</div>
+      <img src="images/canyon.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 12</div>
+      <img src="images/angelsLanding.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 12</div>
+      <img src="images/canyonBridge.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 12</div>
+      <img src="images/grandCamp.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 12</div>
+      <img src="images/hooverDam.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 12</div>
+      <img src="images/lavaTube.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 12</div>
+      <img src="images/climbingLedge.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">12 / 12</div>
+      <img src="images/riverCamp.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Trolltunga">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+    </div>
 	</div>
+	<script src="lightbox.js"></script>
 </body>
 </html>
